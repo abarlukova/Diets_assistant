@@ -28,7 +28,7 @@ Users can input questions, and the system retrieves the most relevant answers, p
 
 ## Preparation
 
-1. Add your OpenAI API key to the `diets-rag-app/.env` file:
+1. Create `diets-rag-app/.env` file, add the following and OpenAI API key:
     
     ```bash
     # PostgreSQL Configuration
