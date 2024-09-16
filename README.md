@@ -29,12 +29,31 @@ Users can input questions, and the system retrieves the most relevant answers, p
 ## Preparation
 
 1. Add your OpenAI API key to the `.env` file:
-
+    
     ```bash
+    # PostgreSQL Configuration
+    POSTGRES_HOST=postgres
+    POSTGRES_DB=course_assistant
+    POSTGRES_USER=your_username
+    POSTGRES_PASSWORD=your_password
+    POSTGRES_PORT=5432
+    
+    # Elasticsearch Configuration
+    ELASTIC_URL_LOCAL=http://localhost:9200
+    ELASTIC_URL=http://elasticsearch:9200
+    ELASTIC_PORT=9200
+    
+    
+    # Streamlit Configuration
+    STREAMLIT_PORT=8501
+    
+    # Other Configuration
+    MODEL_NAME=multi-qa-MiniLM-L6-cos-v1
+    INDEX_NAME=diets-questions
     OPENAI_API_KEY='your-openai-api-key-here'
     ```
 
-2. To run and initialize PostgreSQL, Elasticsearch, and Streamlit, run the following commands:
+1. To run and initialize PostgreSQL, Elasticsearch, and Streamlit, run the following commands:
 
     ```bash
     docker-compose up
