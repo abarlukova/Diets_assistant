@@ -178,4 +178,4 @@ The evaluation results are saved in a **PostgreSQL** database.
 
 ![Alt text](diet%20assistant.jpg)
 
-![Alt text](diet-0assistant-2.jpg)
+![Alt text](diet-assistant-2.jpg)
