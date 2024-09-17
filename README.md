@@ -73,7 +73,7 @@ Users can input questions, and the system retrieves the most relevant answers, p
     pip install sentence-transformers elasticsearch python-dotenv psycopg2
     ```
 
-5. Finally, initialize your setup by running the preparation script:
+5. Finally, initialize your setup by running the preparation script (Ingestion):
 
     ```bash
     python prep.py
