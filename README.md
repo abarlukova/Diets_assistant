@@ -58,6 +58,7 @@ Users can input questions, and the system retrieves the most relevant answers, p
     ```bash
     docker-compose up
     export POSTGRES_HOST="127.0.0.1"
+    pip install sentence-transformers
     python prep.py
     ```
 
