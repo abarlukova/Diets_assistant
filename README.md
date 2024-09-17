@@ -1,8 +1,6 @@
 
 # Diets-RAG
 
-![Alt text](diet%20assistant.jpg)
-
 ## Problem Description
 
 In today’s world, an increasing number of people are seeking personalized diets to improve their health and achieve specific goals, such as weight loss, better metabolic function, or disease management. However, with so many different diets available—ranging from Keto to Vegan, Mediterranean, Paleo, and more—it can be difficult for individuals to choose a diet that best suits their lifestyle, health needs, and preferences. This often leads to confusion, incorrect dietary choices, or even the abandonment of dieting altogether.
@@ -176,5 +174,5 @@ http://127.0.0.1:8501
 
 The evaluation results are saved in a **PostgreSQL** database.
 
-
+![Alt text](diet%20assistant.jpg)
 
