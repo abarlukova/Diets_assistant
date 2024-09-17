@@ -26,10 +26,11 @@ Users can input questions, and the system retrieves the most relevant answers, p
 - **PostgreSQL** to save questions, answers, and user feedback
 - **Elasticsearch** to retrieve data
 
+
 ## Preparation
 
-1. Create `diets-rag-app/.env` file, add the following and OpenAI API key:
-    
+1. Create a `diets-rag-app/.env` file and add the following configurations, including your OpenAI API key:
+
     ```bash
     # PostgreSQL Configuration
     POSTGRES_HOST=postgres
@@ -43,22 +44,36 @@ Users can input questions, and the system retrieves the most relevant answers, p
     ELASTIC_URL=http://elasticsearch:9200
     ELASTIC_PORT=9200
     
-    
     # Streamlit Configuration
     STREAMLIT_PORT=8501
     
     # Other Configuration
     MODEL_NAME=multi-qa-MiniLM-L6-cos-v1
     INDEX_NAME=diets-questions
-    OPENAI_API_KEY='your-openai-api-key-here'
+    OPENAI_API_KEY=your-openai-api-key-here
     ```
 
-1. To run and initialize PostgreSQL, Elasticsearch, and Streamlit, run the following commands:
+2. To run and initialize PostgreSQL, Elasticsearch, and Streamlit, use the following commands:
 
     ```bash
     docker-compose up
+    ```
+
+3. If you are running PostgreSQL locally, export the host as follows:
+
+    ```bash
     export POSTGRES_HOST="127.0.0.1"
-    pip install sentence-transformers
+    ```
+
+4. Install the required Python packages:
+
+    ```bash
+    pip install sentence-transformers elasticsearch python-dotenv psycopg2
+    ```
+
+5. Finally, initialize your setup by running the preparation script:
+
+    ```bash
     python prep.py
     ```
 
