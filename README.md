@@ -1,7 +1,7 @@
 
 # Diets-RAG
 
-![Alt text](diet assistant.jpg)
+![Alt text](diet%20assistant.jpg)
 
 ## Problem Description
 
